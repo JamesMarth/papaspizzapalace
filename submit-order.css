@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    float:normal;
+    font-family:sans-serif;
+}
+
+.left-background {
+    float:left;
+}
+
+.right-background {
+    float:right;
+}
+
+.homepage-button {
+    background-color: red;
+    color:white;
+    border:none;
+    width:89px;
+    height:61px;
+    font-weight:550;
+    transition: background-color 0.3s ease;
+    text-align:center;
+    cursor:pointer
+}
+
+.homepage-button:hover {
+    background-color:rgb(252, 147, 147)
+}
+
+
+

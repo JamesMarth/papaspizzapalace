@@ -1,0 +1,125 @@
+html {
+    font-family:sans-serif;
+}
+
+.left-background {
+    float: left;
+    top:0;
+    left:0;
+}
+
+.right-background {
+    float:right;
+    top:0;
+    right:0;
+}
+
+.make-pizza {
+    float:normal;
+    text-align:center;
+}
+
+header {
+    text-align:center;
+    float:normal;
+}
+
+[type="checkbox"] {
+    opacity:0;
+}
+
+[type="checkbox"] + label {
+    position:relative;
+    padding-left: 30px;
+    cursor:pointer;
+    display:inline-block;
+    color:#1d1d1d;
+    line-height:25px;
+}
+
+[type="checkbox"] + label::before {
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:18px;
+    height:18px;
+    outline:2px solid rgb(177, 177, 177);
+    background:#ffff;
+}
+
+[type="checkbox"]:checked + label::before {
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:18px;
+    height:18px;
+    outline:2px solid rgb(255, 0, 0);
+    background:#ffff;
+}
+
+[type="checkbox"]:checked + label::after {
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:18px;
+    height:18px;
+    background-image: url("https://www.citypng.com/public/uploads/preview/red-tick-check-mark-icon-symbol-sign-png-31623349268odaqglzvyi.png");
+    background-size:contain;
+    transform:scale(1);
+    opacity: 1;
+    transition:all 0.3s ease;
+}
+
+[type="checkbox"]:not(:checked) + label::after {
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:18px;
+    height:18px;
+    background-image: url("https://www.citypng.com/public/uploads/preview/red-tick-check-mark-icon-symbol-sign-png-31623349268odaqglzvyi.png");
+    background-size:contain;
+    transform: scale(0);
+    opacity:0;
+}
+
+select {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    font-size:1.5rem;
+    padding:.5em 1em;
+    background: #ededed;
+    color:rgb(15, 15, 15);
+    border:0;
+}
+
+.custom-select {
+    position:relative;
+}
+
+.custom-arrow {
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    background:red;
+    height:100%;
+    width:2rem;
+}
+
+.submit {
+    font-family: sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    padding:2em 2.66em;
+    color:white;
+    background:#ff2525;
+    transition: background-color 0.3s ease;
+    border:0;
+}
+
+.submit:hover {
+    background:#ff6262
+}
